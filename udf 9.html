@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter number :
+    <input type="text" id="number1" /><br /><br />
+    <input type="submit" onclick="num()" /><br />
+    <h1 id="udf1"></h1>
+  </body>
+  <script>
+    function num() {
+      var a = parseInt(document.getElementById("number1").value);
+      a>=18?document.getElementById("udf1").innerHTML=" you are eligible for vote"
+            :document.getElementById("udf1").innerHTML=" you are not eligible for vote";     
+    }
+    </script>
+</body>
+</html>

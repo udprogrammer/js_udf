@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Enter number :
+    <input type="text" id="number1" /><br /><br />
+    <input type="submit" onclick="num()" /><br />
+    <h1 id="udf1"></h1>
+  </body>
+  <script>
+    function num() {
+      var a = parseInt(document.getElementById("number1").value);
+      if (a < 0) {
+        document.getElementById("udf1").innerHTML = "Negative";
+      } else if (a > 0) {
+        document.getElementById("udf1").innerHTML = "Positive";
+      } else {
+        document.getElementById("udf1").innerHTML = "Natural";
+      }
+    }
+  </script>
+</html>

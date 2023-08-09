@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Enter number A:
+    <input type="text" id="number1" /><br /><br />
+    Enter number B:
+    <input type="text" id="number2" /><br /><br />
+    <input type="submit" onclick="num()" /><br /><br />
+    A ==
+    <h1 id="udf1"></h1>
+    <br />
+    B ==
+    <h1 id="udf2"></h1>
+    <script>
+      function num() {
+        let a = parseInt(document.getElementById("number1").value);
+        let b = parseInt(document.getElementById("number2").value);
+        a = a - b;
+        b = a + b;
+        a = b - a;
+        document.getElementById("udf1").innerHTML = a;
+        document.getElementById("udf2").innerHTML = b;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Enter number A:
+    <input type="text" id="number1" /><br /><br />
+    Enter number B:
+    <input type="text" id="number2" /><br /><br />
+    Enter number C:
+    <input type="text" id="number3" /><br /><br />
+    <input type="submit" onclick="num()" /><br />
+    <h1 id="udf1"></h1>
+    <script>
+      function num() {
+        let a = parseInt(document.getElementById("number1").value);
+        let b = parseInt(document.getElementById("number2").value);
+        let c = parseInt(document.getElementById("number3").value);
+        if (a > b) {
+          if (a > c) {
+            document.getElementById("udf1").innerHTML = "A is maximum";
+          } else {
+            document.getElementById("udf1").innerHTML = "C is maximum";
+          }
+        } else {
+          if (b > c) {
+            document.getElementById("udf1").innerHTML = "B is maximum";
+          } else {
+            document.getElementById("udf1").innerHTML = "C is maximum";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

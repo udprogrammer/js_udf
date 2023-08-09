@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>1 for addition</li>
+        <li>2 for subtraction</li>
+        <li>3 for multiplication</li>
+        <li>4 for division </li>
+    </ul>
+    Enter your option:
+    <input type="text" id="ope" /><br /><br />
+    Enter number A:
+    <input type="text" id="number1" /><br /><br />
+    Enter number B:
+    <input type="text" id="number2" /><br /><br />
+    <input type="submit" onclick="num()" /><br />
+    <h1>Ans :</h1> 
+    <h1 id="udf1"></h1>
+  </body>
+  <script>
+    function num() {
+      let a = parseInt(document.getElementById("number1").value);
+      let b = parseInt(document.getElementById("number2").value);
+      let c = parseInt(document.getElementById("ope").value);
+     switch (c) {
+        case 1:
+            document.getElementById("udf1").innerHTML=a+b;
+            break;
+        case 2:
+            document.getElementById("udf1").innerHTML=a-b;
+            break;
+        case 3:
+            document.getElementById("udf1").innerHTML=a*b;
+            break;
+        case 4:
+            document.getElementById("udf1").innerHTML=a/b;
+            break;
+        default:
+            document.getElementById('udf1').innerHTML="Please Enter valid number"
+            break;
+     }
+    }
+    </script>
+</body>
+</html>
